@@ -1,0 +1,104 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1877f2;
+    color: white;
+    padding: 20px;
+}
+
+.user-info {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background: #f0f2f5;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1877f2;
+    margin-top: 10px;
+}
+
+.upcoming-exams {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddfe2;
+}
+
+th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.btn-take-exam {
+    background: #1877f2;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.exam-pending {
+    color: #666;
+    font-size: 14px;
+}
